@@ -17,7 +17,7 @@ def get_ip_tracert(ip):
 
 
 def main():
-    list_ip = get_ip_tracert("vk.com")
+    list_ip = get_ip_tracert(str(input()))
     for json in get_data_ipapi(list_ip):
         for key, value in json.items():
             print(key, value)
